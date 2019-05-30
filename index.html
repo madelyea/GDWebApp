@@ -20,7 +20,7 @@
 <body>
     <div class="main">
         <nav class="navbar navbar-expand-sm text-light">
-            <a class="navbar-brand">Madeleine Elyea</a>
+            <!-- <a class="navbar-brand"></a> -->
             <div class="navbar-nav">
                 <ul class="navbar-nav">
                     <a href='index.html' class='nav-link'>home</a>
@@ -29,6 +29,34 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- Selectors for sorting -->
+        <table class="selTable">
+            <tr class="selContainer">
+                <td>catagory</td>
+                <td>
+                    <select name="catagory" id="catagorySelector">
+                        <option value="shows">shows</option>
+                        <option value="albums">albums</option>
+                        <option value="songs">songs</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="selContainer">
+                <td>date</td>
+                <td>
+                    <select name="date" id="dateSelector">
+                        <option value="2010">2010's</option>
+                        <option value="2000">2000's</option>
+                        <option value="1990">1990's</option>
+                        <option value="1980">1980's</option>
+                        <option value="1970">1970's</option>
+                        <option value="1960">1960's</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
 
         <!-- access the generated content -->
         <div id="root"></div>
