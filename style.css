@@ -39,8 +39,8 @@ body {
 }
 
 .selTable {
-  z-index: 1;
-  position: sticky;
+  /* z-index: 1;
+  position: sticky; */
   top: 0;
   position: -webkit-sticky; /* Safari */
 }
