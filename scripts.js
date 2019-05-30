@@ -5,11 +5,10 @@ container.setAttribute('class', 'container');
 
 
 
-
 app.appendChild(container);
 var request = new XMLHttpRequest();
-request.open('GET', , true);
-// request.open('GET', 'https://archive.org/metadata/GratefulDead/files', true);
+//request.open('GET', , true);
+request.open('GET', 'https://archive.org/metadata/GratefulDead/files', true);
 console.log(request.response);
 request.onload = function () {
 
