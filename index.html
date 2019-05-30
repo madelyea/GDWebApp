@@ -36,13 +36,21 @@
             <tr class="selContainer">
                 <td>catagory</td>
                 <td>
-                    <select name="catagory" id="catagorySelector">
+                    <select name="category" id="categorySelector">
                         <option value="shows">shows</option>
                         <option value="albums">albums</option>
                         <option value="songs">songs</option>
                     </select>
                 </td>
             </tr>
+                <script>
+                    $(document).ready(function () {
+                        $("#categorySelector").change(function () {
+                            $("#root").load("index.html");
+                            return false;
+                        });
+                    });
+                </script>
             <tr class="selContainer">
                 <td>date</td>
                 <td>
@@ -58,9 +66,10 @@
             </tr>
         </table>
 
+        <script></script>
 
         <!-- access the generated content -->
-        <div id="root"></div>
+        <div id="root"></div> 
         <script src="scripts.js"></script>
 
         <div class="footer">
