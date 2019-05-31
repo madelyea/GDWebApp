@@ -21,12 +21,12 @@ a:visited {
   display: inline-block;
 }
 
-a:hover,
+/* a:hover,
 a:active {
   color: white;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
 
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -55,6 +55,11 @@ body {
   margin-left: 40px;
 }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* .selector {
   				margin:0px 0px 20px 0px;
 } */
@@ -63,7 +68,7 @@ body {
 h1 {
   text-align: center;
   padding: 4px 4px;
-    margin: 0 0 3px 0;
+  margin: 0 0 3px 0;
   font-size: 24px;
   color: white;
   background-image: linear-gradient(120deg, #bd36b6 0%, #9413eb 100%);
@@ -80,13 +85,19 @@ img {
   max-width: 100%;
 }
 
-
+/* Cards: the results containers for content from the api */
 .card {
   margin: 12px;
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
 }
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
 
 /* .row {
   margin: 10px - 16px;
@@ -121,9 +132,9 @@ img {
         }
 
 .content:hover {
-            opacity: 0.80;
-            filter: alpha(opacity=80);
-        }
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+}
 
 @media screen and (max-width: 1000px) {
             .column {
@@ -136,6 +147,24 @@ img {
                 width: 100%;
             }
         }
+
+@media screen and (min-width: 1px) {
+  .card {
+    flex: 1 1 calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 50px);
+  }
+}
 
 .other {
             float: center;
@@ -157,43 +186,33 @@ img {
 
 
 
+
+
+
+
+
+
 /* from the ghibli */
-* {
+/* * {
   box-sizing: border-box
-}
+} */
 
 
-#root {
+/* #root {
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 
-.card:hover {
-  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-  transform: translate3D(0, -2px, 0);
-}
 
-@media screen and (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 2rem);
-  }
-}
 
-@media screen and (min-width: 900px) {
-  .card {
-    flex: 1 1 calc(33% - 2rem);
-  }
-}
 
-.card:nth-child(2n) h1 {
+
+
+/* .card:nth-child(2n) h1 {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
@@ -203,4 +222,4 @@ img {
 
 .card:nth-child(5n) h1 {
   background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
-}
+} */

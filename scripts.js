@@ -1,12 +1,12 @@
-const app = document.getElementById('root');
+const app = document.getElementById('results');
 
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
+const cardContainer = document.createElement('div');
+cardContainer.setAttribute('class', 'cardContainer');
 
 // Get the correct filters from the user
 var categorySelector = document.getElementById('categorySelector').value;
 
-app.appendChild(container);
+app.appendChild(cardContainer);
 var request = new XMLHttpRequest();
 
 // open based on the filter options
@@ -43,8 +43,8 @@ request.onload = function () {
             data.result[i].name = data.result[i].name.substring(0, 300);
             p.textContent = `${data.result[i].name}...`;
 
-            container.appendChild(card);
-            card.appendChild(img);
+            cardContainer.appendChild(card);
+            // card.appendChild(img);
             card.appendChild(h1);
             card.appendChild(p);
         }
