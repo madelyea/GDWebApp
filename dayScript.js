@@ -3,20 +3,11 @@ const app = document.getElementById('results');
 const cardContainer = document.createElement('div');
 cardContainer.setAttribute('class', 'cardContainer');
 
-// Get the correct filters from the user
-var categorySelector = document.getElementById('categorySelector').value;
-
 app.appendChild(cardContainer);
 var request = new XMLHttpRequest();
 
-// open based on the filter options
-if (categorySelector === 'albums') {
-    request.open('GET', 'https://archive.org/metadata/ArchiveIt-Collection-5934/files', true);
-} else {
-    request.open('GET', 'https://archive.org/metadata/GratefulDead/files', true);
-}
 
-//request.open('GET', 'https://archive.org/metadata/GratefulDead/files', true);
+request.open('GET', 'https://archive.org/metadata/october13_201810/files', true);
 
 console.log(request.response);
 request.onload = function () {
