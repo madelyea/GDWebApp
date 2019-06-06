@@ -6,6 +6,14 @@ html {
   background: #F6F6F6;
 }
 
+/* #background {
+  background-image: linear-gradient(rgb(190, 35, 113) , rgb(33, 12, 219));
+  position: fixed;
+  margin: 0;
+  width: 100%; 
+  height: 100%;
+} */
+
 /* Navbar: some details here, also styled through bootstrap labels */
 .navbar {
   position: relative;
@@ -119,7 +127,7 @@ img {
         }
 
 .footer {
-  /* position: fixed; */
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
