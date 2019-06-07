@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+
+    <script src=injectionscript.js></script>
+    <script
+        src='https://archive.org/advancedsearch.php?q=collection%3AGratefulDead+AND+title%3A"-06-06"&fl%5B%5D=description&fl%5B%5D=identifier&fl%5B%5D=title&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=GD.this_day_in_history'></script>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-sm text-light">
+            <a class="navbar-brand">Grateful Archive</a>
+            <div class="navbar-nav">
+                <ul class="navbar-nav">
+                    <a href='index.html' class='nav-link'>home</a>
+                    <a href='dayin.html' class='nav-link'>this day in history</a>
+                    <a href='about.html' class="nav-link">about</a>
+                </ul>
+            </div>
+        </nav>
+
+        <body class="body" onload="GD.drawit()"></body>
+
+        <div class="footer">
+            <div class="footer-expand-sm text-light">
+                <p>Madeleine Elyea and Issac Greenfield, June 2019</p>
+            </div>
+
+        </div>
+</body>
+
+</html>
