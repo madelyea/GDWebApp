@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-sm text-light">
+            <a class="navbar-brand">Grateful Archive</a>
+            <div class="navbar-nav">
+                <ul class="navbar-nav">
+                    <a href='index.html' class='nav-link'>home</a>
+                    <a href='dayin.html' class='nav-link'>this day in history</a>
+                    <a href='about.html' class="nav-link">about</a>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Selectors for sorting -->
+        <table class="selTable">
+            <tr class="selContainer">
+                <td>catagory</td>
+                <td>
+                    <select name="category" id="categorySelector">
+                        <option value="shows">shows</option>
+                        <option value="albums">albums</option>
+                        <option value="songs">songs</option>
+                    </select>
+                </td>
+            </tr>
+            <script>
+                $(document).ready(function () {
+                    $("#categorySelector").change(function () {
+                        $("#root").load("index.html");
+                        return false;
+                    });
+                });
+            </script>
+            <tr class="selContainer">
+                <td>date</td>
+                <td>
+                    <select name="date" id="dateSelector">
+                        <option value="2010">2010's</option>
+                        <option value="2000">2000's</option>
+                        <option value="1990">1990's</option>
+                        <option value="1980">1980's</option>
+                        <option value="1970">1970's</option>
+                        <option value="1960">1960's</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <script></script>
+
+        <!-- access the generated content -->
+        <div id="results"></div>
+        <script src="scripts.js"></script>
+
+        <div class="footer">
+            <div class="footer-expand-sm text-light">
+                <p>Madeleine Elyea and Issac Greenfield, June 2019</p>
+            </div>
+
+        </div>
+</body>
+
+</html>
