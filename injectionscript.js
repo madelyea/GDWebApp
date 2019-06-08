@@ -16,10 +16,7 @@ var GD =
 
 
 
-        var str = '<div class="box"><h1>Welcome to My Archive </h1><br/>\n\
-I like archive.org because it has over... great videos.<br/>\n \
-\n\
-</div>\n';
+        var str = '';
 
         // <div style="width:300px;" class="box"><h1>A favorite archive.org film of mine is: </h1>\n\
         // <br/><a href="https://archive.org/details/' +
@@ -31,7 +28,7 @@ I like archive.org because it has over... great videos.<br/>\n \
         // we will get the <body> tag from the "DOM" and append a new <div> there
         var body = document.getElementsByTagName("body")[0];
         var obj = document.createElement('div');
-
+        obj.setAttribute('class', 'cardContainer');
         var pid = this.day.response.docs;
 
         // search hits
