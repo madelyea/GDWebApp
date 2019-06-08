@@ -16,11 +16,17 @@ html {
 
 /* Navbar: some details here, also styled through bootstrap labels */
 .navbar {
-  position: relative;
+  /* margin-left: 3rem; */
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem;
+  position: relative !important;
+  /* position: relative;
   background-color: transparent;
   background-position: top;
-  margin-left: -60px;
   margin-bottom: 30px;
+  overflow: hidden; */
 }
 
 .navbar-nav ul a{
@@ -29,9 +35,13 @@ html {
 
 /* Main styling */
 body {
+  z-index: 1;
   background-image: linear-gradient(rgb(190, 35, 113) , rgb(33, 12, 219));
-  padding: 20px;
+  /* padding: 20px; */
   font-family: 'Gotham', Georgia, 'Times New Roman', Times, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main {
@@ -44,10 +54,23 @@ body {
   grid-template-columns: repeat(3, 1fr);
   display: flex;
   flex-wrap: wrap;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .card {
-  margin: 12px;
+  margin: 1rem;
+  max-width: 30rem;
+  /* max-height: 15rem; */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.cardAbout {
+  margin: 1rem;
+  max-width: 30rem;
+  /* max-height: 15rem; */
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
@@ -57,6 +80,13 @@ body {
   box-shadow: 2px 8px 45px rgba(73, 8, 48, 0.15);
   transform: translate3D(-5px, -6px, 0);
   background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
+ text-decoration: none !important;
+}
+.cardAbout:hover {
+  box-shadow: 2px 8px 45px rgba(73, 8, 48, 0.15);
+  transform: translate3D(-5px, -6px, 0);
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
+ text-decoration: none !important;
 }
 
 * {
@@ -84,7 +114,7 @@ body {
 /* Content: the images and words within the cards */
 .content {
   background-color: rgb(240, 178, 248);
-  padding: 10px;
+  padding: 5rem;
   opacity: 1.0;
   filter: alpha(opacity=100);
         }
@@ -134,11 +164,10 @@ img {
 
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 5rem;
 }
