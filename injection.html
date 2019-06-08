@@ -9,8 +9,21 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
 
     <script src=injectionscript.js></script>
-    <script
-        src='https://archive.org/advancedsearch.php?q=collection%3AGratefulDead+AND+title%3A"-06-06"&fl%5B%5D=description&fl%5B%5D=identifier&fl%5B%5D=title&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=GD.this_day_in_history'></script>
+    <!-- <script
+        src='https://archive.org/advancedsearch.php?q=collection%3AGratefulDead+AND+title%3A"-06-06"&fl%5B%5D=description&fl%5B%5D=identifier&fl%5B%5D=title&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=GD.this_day_in_history'></script> -->
+    <script type="text/javascript">
+        (function () {
+            var e = document.getElementsByTagName("script")[0];
+            var d = document.createElement("script");
+            var today = new Date();
+            console.log(today.getMonth());
+            //date updates automatically and pulls data for this day in history
+            d.src = 'https://archive.org/advancedsearch.php?q=collection%3AGratefulDead+AND+title%3A"-0' + (today.getMonth() + 1) + '-0' + today.getDate() + '"&fl%5B%5D=description&fl%5B%5D=identifier&fl%5B%5D=title&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=GD.this_day_in_history';
+            e.parentNode.insertBefore(d, e);
+            console.log(d.src);
+        })();
+    </script>
+
     <link href="style.css" rel="stylesheet">
 
 </head>
