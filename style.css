@@ -19,8 +19,13 @@ html {
   position: relative;
   background-color: transparent;
   background-position: top;
+  margin-left: -60px;
   margin-bottom: 30px;
 }
+
+.navbar-nav ul a{
+  color: white !important;
+  }
 
 /* Main styling */
 body {
