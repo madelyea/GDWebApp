@@ -39,9 +39,13 @@ var GD =
             var ident = hit.identifier;
 
 
-            str += '<div class="card"><h1>' + title + '</h1>' +
-                '<p>' + desc + '</p></div>';
+            str += '<a class="card" href=https://archive.org/details/' + ident + '><h1>' + title + '</h1>' +
+                '<p>' + desc + '</p></a>';
         }
+
+        //https://archive.org/details/gd1980-06-07.142842.set1.aud.sterry.beckwith.miller.clugston.flac1648
+        //https://archive.org/details/ident 
+
 
         obj.innerHTML = str;
 
