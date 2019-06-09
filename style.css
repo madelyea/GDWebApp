@@ -41,6 +41,8 @@ body {
   font-family: 'Gotham', Georgia, 'Times New Roman', Times, sans-serif;
   text-align: center;
   width: 100%;
+  /* Set the min height to the size of any screen */
+  min-height: 100vh;  
   margin: 0 auto;
 }
 
@@ -67,22 +69,7 @@ body {
   transition: all .2s linear;
 }
 
-.cardAbout {
-  margin: 1rem;
-  max-width: 30rem;
-  /* max-height: 15rem; */
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all .2s linear;
-}
-
 .card:hover {
-  box-shadow: 2px 8px 45px rgba(73, 8, 48, 0.15);
-  transform: translate3D(-5px, -6px, 0);
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
- text-decoration: none !important;
-}
-.cardAbout:hover {
   box-shadow: 2px 8px 45px rgba(73, 8, 48, 0.15);
   transform: translate3D(-5px, -6px, 0);
   background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
@@ -131,6 +118,24 @@ h1 {
   font-size: 24px;
   color: white;
   background-image: linear-gradient(120deg, #bd36b6 0%, #9413eb 100%);
+}
+
+h2 {
+  padding: 0 4px 4px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding: 1rem;
+  text-align: left;
+  color: rgb(8, 0, 0);
+}
+
+.p2 {
+  padding: 0 4px 4px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding: 1rem;
+  text-align: left;
+  color: rgb(8, 0, 0);
 }
 
 p {
