@@ -16,6 +16,9 @@ var GD =
         var desc = null;
         var ident = null;
         var notes = null;
+        var runtime = null;
+        var location = null;
+
 
         var body = document.getElementsByTagName("body")[0];
         var obj = document.createElement('div');
@@ -30,7 +33,6 @@ var GD =
         console.log(ident);
 
         // Get the individual page details and inject into the str
-        // var hit = this.day.response.docs[0];  // This will need to dynamically set the right card
 
         var requestUrl = "https://archive.org/metadata/" + ident;
         console.log(requestUrl);
@@ -47,9 +49,14 @@ var GD =
             desc = showData.metadata.description;
             console.log(desc);
             notes = showData.metadata.notes;
+            runtime = showData.metadata.runtime;
+            location = showData.metadata.coverage;
 
-            var strResult = '<div class="body">';
-            strResult += '<h2>' + title + '</h2><iframe src="https://archive.org/embed/' + ident + '" width="500" height="140" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><p class="p2">' + desc + '</p>' + '<p class = "p2">' + notes + '</p>';
+
+            var strResult = '<div class="body" style="line-height:17px">';
+            strResult += '<h2>' + title + '</h2><div><h3>' + location + '</h3><h3>Total Runtime:<p class="p2">' + runtime + '</p></div><br><div><iframe src="https://archive.org/embed/' + ident + '"position="static" width="650" height="40" align="left" margin-left="6rem" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div><br><br><br><br><br><br><div><h3>Set List:</h3><p class="p2">' + desc + '</p>' + '<p class = "p2">' + notes + '</p></div><br.<br><br><br>';
+
+            // strResult += '<h2>' + title + '</h2><iframe src="https://archive.org/embed/' + ident + '" width="500" height="140"  frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><p class="p2">' + desc + '</p>' + '<p class = "p2">' + notes + '</p>';
 
             strResult += '</div>';
 

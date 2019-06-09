@@ -107,20 +107,28 @@ h1 {
 }
 
 h2 {
-  padding: 0 4px 4px;
+  position: sticky;
   margin-left: 6rem;
   margin-right: 6rem;
-  padding: 1rem;
   text-align: left;
   color: rgb(8, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-size: 18px;
+  /* padding: 1rem; */
+  text-align: left;
+  color: rgb(8, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .p2 {
-  padding: 0 4px 4px;
+  /* padding: 0 4px 4px; */
   margin-left: 6rem;
   margin-right: 6rem;
-  padding: 1rem;
   text-align: left;
   color: rgb(8, 0, 0);
   border: 2pt white;
@@ -130,7 +138,7 @@ h2 {
 
 p {
   padding: 0 4px 4px;
-  margin: 0;
+  margin-bottom: 1rem;
   color: rgb(8, 0, 0);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 12pt;
@@ -156,6 +164,14 @@ img {
 .other {
             float: center;
         }
+
+iframe {
+  align-content: left;
+  
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
+}
 
 .footer {
   position: fixed;
