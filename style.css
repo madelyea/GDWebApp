@@ -177,10 +177,10 @@ iframe {
   position: fixed;
   bottom: 0;
   width: 70%;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
   color: white;
   text-align: center;
   margin-top: 5rem;
+
 }
 
 .logo {
