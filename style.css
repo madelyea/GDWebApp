@@ -168,7 +168,7 @@ img {
 
 iframe {
   align-content: left;
-  
+  max-width: 75%;
   margin-left: 6rem;
   margin-bottom: 1rem;
   /* padding: 1rem; */
