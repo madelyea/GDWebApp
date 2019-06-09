@@ -31,6 +31,19 @@ body {
   margin: 0 auto;
 }
 
+/* show body */
+.bodyShow {
+  z-index: 1;
+  background-image: linear-gradient(rgb(190, 35, 113) , rgb(33, 12, 219));
+  animation: colorRotate 50s linear infinite;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  /* Set the min height to the size of any screen */
+  min-height: 100vh;  
+  margin: 0 auto;
+}
+
 .main {
   max-width: 1000px;
   margin: auto;
@@ -184,7 +197,7 @@ iframe {
 }
 
 .logo {
-  animation: colorRotate 3s linear infinite;
+  animation: colorRotate 4s linear infinite;
   width: 70%;
   height: 20%;
   position: relative;
