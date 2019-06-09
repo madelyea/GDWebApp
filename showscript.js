@@ -58,9 +58,11 @@ var GD =
             if (runtime != null) {
                 strResult += '<h3>Total Runtime:<p class="p2">' + runtime + '</p>';
             }
-            strResult += '</div><br><div><iframe src="https://archive.org/embed/' + ident + '"position="static" width="650" height="40" align="left" margin-left="6rem" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div><br><br><br><br><br><br><div><h3>Set List:</h3><p class="p2">' + desc + '</p>' + '<p class = "p2">' + notes + '</p></div><br.<br><br><br>';
-
-            // strResult += '<h2>' + title + '</h2><iframe src="https://archive.org/embed/' + ident + '" width="500" height="140"  frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><p class="p2">' + desc + '</p>' + '<p class = "p2">' + notes + '</p>';
+            strResult += '</div><br><div><iframe src="https://archive.org/embed/' + ident + '"position="static" width="650" height="40" align="left" margin-left="6rem" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div><br><br><br><br><br><br><div><h3>Set List:</h3><p class="p2">' + desc + '</p>';
+            if (notes != null) {
+                strResult += '<h3>Notes:</h3><p class = "p2">' + notes + '</p>';
+            }
+            strResult += '</div><br.<br><br><br>';
 
             strResult += '</div>';
 
