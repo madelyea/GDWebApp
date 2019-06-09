@@ -72,12 +72,8 @@ body {
 .card:hover {
   box-shadow: 2px 8px 45px rgba(73, 8, 48, 0.15);
   transform: translate3D(-5px, -6px, 0);
-<<<<<<< HEAD
-  background-image: url("https://carwad.net/sites/default/files/grateful-dead-bolt-129961-1732709.png");
-=======
   background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
- text-decoration: none !important;
->>>>>>> fe6622b675821e1f061fb83087accefe450dbff5
+  text-decoration: none !important;
 }
 
 * {
