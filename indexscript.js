@@ -40,10 +40,10 @@ var GD =
             // str += '<a class="card" href=https://archive.org/details/' + ident + '><h1>' + title + '</h1>' +
             //     '<p>' + desc + '</p></a>';
             str += '<a class="card" href = "show.html?link=' + ident + '"><h1>' + title + '</h1>' +
-                '<p><img src = "https://ia600201.us.archive.org/0/items/gd1995-06-04.sennME40.sturtevant-swayne.85716.flac1648/gd95-06-04s1t03.png"' + desc + '</p></a>';
+                '<p><img src = "https://ia600201.us.archive.org/0/items/gd1995-06-04.sennME40.sturtevant-swayne.85716.flac1648/gd95-06-04s1t03.png">' + desc + '</p></a>';
         }
 
-
+        // Test links
         //https://archive.org/details/gd1980-06-07.142842.set1.aud.sterry.beckwith.miller.clugston.flac1648
         //https://archive.org/details/ident 
 
