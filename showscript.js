@@ -58,15 +58,11 @@ var GD =
             if (runtime != null) {
                 strResult += '<h3>Total Runtime:<p class="p2">' + runtime + '</p>';
             }
-<<<<<<< HEAD
-            strResult += '</div><br><div><iframe src="https://archive.org/embed/' + ident + '"position="static" width="650" height="40" align="left" margin-left="6rem" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div><br><br><br><br><br><br><div><h3>Set List:</h3><p class="p2">' + desc + '</p>' + '<p class = "p2">' + notes + '</p></div><br.<br><br><br>';
-=======
-            strResult += '</div><br><div><iframe src="https://archive.org/embed/' + ident + '"position="static" width="650" height="40" align="left" margin-left="6rem" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div><br><br><br><br><br><br><div><h3>Set List:</h3><p class="p2">' + desc + '</p>';
+            strResult += '</div><br><div><iframe src="https://archive.org/embed/' + ident + '"position="static" width="650" height="40" align="center" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><img class="logo"src = "images/kisspng-history-of-the-grateful-dead-volume-one-bear-s-c-jerry-can-5ad449c6a3fd84.8798524315238619586717.png" ></div><div><h3>Set List:</h3><p class="p2">' + desc + '</p>';
             if (notes != null) {
                 strResult += '<h3>Notes:</h3><p class = "p2">' + notes + '</p>';
             }
             strResult += '</div><br.<br><br><br>';
->>>>>>> dc2c3cd877aaa833a105ecc2a8928c05fb65222c
 
             strResult += '</div>';
 

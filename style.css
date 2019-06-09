@@ -167,9 +167,8 @@ img {
         }
 
 iframe {
-  align-content: left;
   max-width: 75%;
-  margin-left: 6rem;
+  /* margin-left: 6rem; */
   margin-bottom: 1rem;
   /* padding: 1rem; */
 }
@@ -182,4 +181,17 @@ iframe {
   color: white;
   text-align: center;
   margin-top: 5rem;
+}
+
+.logo {
+  animation: colorRotate 3s linear infinite;
+  width: 70%;
+  height: 20%;
+  position: relative;
+}
+
+@keyframes colorRotate {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+  }
 }
