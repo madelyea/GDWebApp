@@ -32,14 +32,14 @@ var GD =
         var pid = this.day.response.docs;
 
         // search hits
-
         for (var hit, i = 0; hit = this.day.response.docs[i]; i++) {
             var title = hit.title;
             var desc = hit.description;
             var ident = hit.identifier;
 
-
-            str += '<a class="card" href=https://archive.org/details/' + ident + '><h1>' + title + '</h1>' +
+            // str += '<a class="card" href=https://archive.org/details/' + ident + '><h1>' + title + '</h1>' +
+            //     '<p>' + desc + '</p></a>';
+            str += '<a class="card" href = "show.html"><h1>' + title + '</h1>' +
                 '<p>' + desc + '</p></a>';
         }
 
