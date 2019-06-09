@@ -136,6 +136,8 @@ h2 {
   padding: 1rem;
   text-align: left;
   color: rgb(8, 0, 0);
+  border: 2pt white;
+  border-radius: 5px;
 }
 
 p {
