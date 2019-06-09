@@ -6,27 +6,13 @@ html {
   background: #F6F6F6;
 }
 
-/* #background {
-  background-image: linear-gradient(rgb(190, 35, 113) , rgb(33, 12, 219));
-  position: fixed;
-  margin: 0;
-  width: 100%; 
-  height: 100%;
-} */
-
 /* Navbar: some details here, also styled through bootstrap labels */
 .navbar {
-  /* margin-left: 3rem; */
   width: 100% !important;
   margin: 0 auto !important;
   padding-left: 3rem !important;
   padding-right: 3rem;
   position: relative !important;
-  /* position: relative;
-  background-color: transparent;
-  background-position: top;
-  margin-bottom: 30px;
-  overflow: hidden; */
 }
 
 .navbar-nav ul a{
@@ -37,7 +23,6 @@ html {
 body {
   z-index: 1;
   background-image: linear-gradient(rgb(190, 35, 113) , rgb(33, 12, 219));
-  /* padding: 20px; */
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
   width: 100%;
@@ -63,7 +48,6 @@ body {
 .card {
   margin: 1rem;
   max-width: 30rem;
-  /* max-height: 15rem; */
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
@@ -112,6 +96,7 @@ body {
   filter: alpha(opacity=80);
 }
 
+/* Main content, page text */
 h1 {
   text-align: center;
   padding: 4px 4px;
@@ -159,8 +144,6 @@ img {
 
 /* Other Elements */
 .selTable {
-  /* z-index: 1;
-  position: sticky; */
   top: 0;
   position: -webkit-sticky; /* Safari */
 }
@@ -177,7 +160,7 @@ img {
 .footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 70%;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/11/20/05/wave-1817646_960_720.png");
   color: white;
   text-align: center;
