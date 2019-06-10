@@ -25,7 +25,7 @@
             var today = new Date();
             console.log(today.getMonth());
             //date updates automatically and pulls data for this day in history
-            d.src = 'https://archive.org/advancedsearch.php?q=collection%3AGratefulDead+AND+title%3A"-0' + (today.getMonth() + 1) + '-0' + today.getDate() + '"&fl%5B%5D=description&fl%5B%5D=identifier&fl%5B%5D=title&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=GD.this_day_in_history';
+            d.src = 'https://archive.org/advancedsearch.php?q=collection%3AGratefulDead+AND+title%3A"-0' + (today.getMonth() + 1) + '-' + today.getDate() + '"&fl%5B%5D=description&fl%5B%5D=identifier&fl%5B%5D=title&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=GD.this_day_in_history';
             e.parentNode.insertBefore(d, e);
             console.log(d.src);
         })();
