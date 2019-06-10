@@ -35,7 +35,7 @@ body {
 .bodyShow {
   z-index: 1;
   background-image: linear-gradient(rgb(190, 35, 113) , rgb(33, 12, 219));
-  animation: colorRotate 50s linear infinite;
+  animation: colorRotate 70s linear infinite;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
   width: 100%;
