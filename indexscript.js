@@ -12,18 +12,7 @@ var GD =
 
 
     drawit: function () {
-        // all JSON services/results are in and we can draw up the page now!
-
-
-
         var str = '';
-
-        // <div style="width:300px;" class="box"><h1>A favorite archive.org film of mine is: </h1>\n\
-        // <br/><a href="https://archive.org/details/' +
-        //             1 + '"><img src="https://archive.org/download/' +
-        //             1 +
-        //             '/format=Animated+Gif"/></a><br/>and it has the following formats: <ul></div>';
-
 
         // we will get the <body> tag from the "DOM" and append a new <div> there
         var body = document.getElementsByTagName("body")[0];
@@ -37,10 +26,12 @@ var GD =
             var desc = hit.description;
             var ident = hit.identifier;
 
-            // str += '<a class="card" href=https://archive.org/details/' + ident + '><h1>' + title + '</h1>' +
-            //     '<p>' + desc + '</p></a>';
+            // depriciated non-local image pull
+            // str += '<a class="card" href = "show.html?link=' + ident + '"><h1>' + title + '</h1>' +
+            //     '<p><img src = "https://ia600201.us.archive.org/0/items/gd1995-06-04.sennME40.sturtevant-swayne.85716.flac1648/gd95-06-04s1t03.png">' + desc + '</p></a>';
+            // Get our image and populate the cards
             str += '<a class="card" href = "show.html?link=' + ident + '"><h1>' + title + '</h1>' +
-                '<p><img src = "https://ia600201.us.archive.org/0/items/gd1995-06-04.sennME40.sturtevant-swayne.85716.flac1648/gd95-06-04s1t03.png">' + desc + '</p></a>';
+                '<p><img src = "images/sound-wave-transparent.png" style="height: 5rem; width: 90%">' + desc + '</p></a>';
         }
 
         // Test links
